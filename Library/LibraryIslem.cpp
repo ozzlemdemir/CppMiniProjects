@@ -17,13 +17,10 @@ public:
         {
             cout << "Hata: dosya acilamadi!" << endl;
         }
-        while (dosya.eof())
+        string satir;
+        while (getline(dosya, satir))
         {
-            string kitap;
-            while (getline(dosya, kitap))
-            {
-                cout << kitap << endl;
-            }
+            cout << satir << endl;
         }
     }
 
